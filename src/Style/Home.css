@@ -1,0 +1,40 @@
+.home {
+    width: 100%;
+    height: 850px;
+    font-size: 28px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+
+}
+
+.home h1{
+    margin-left: 50px;
+    margin-right: 10%;
+}
+.home p{
+    margin-left: 50px;
+    margin-right: 10%;
+}
+.home img {
+    height: 110px;
+    width: 130px;
+  }
+  @media screen and (max-width: 525px){.home img {
+    width: 0px;
+  }}
+.examplePhotos img{
+    margin-left: 6%;
+}
+
+.home h4{
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 10%;
+}
+
