@@ -6,13 +6,18 @@ import Applience from "../images/HouseApplience.jpg";
 
 const Product = () => {
   const [name, setName] = useState("Place item in shopping cart");
+  const [nameTwo, setNameTwo] = useState("Place item in shopping cart");
+  const [nameThree, setNameThree] = useState("Place item in shopping cart");
 
   const handleClick = () => {
     setName("Purchased");
   };
 
   const handleClickTwo = () => {
-    setName("tester");
+    setNameTwo("Purchased");
+  };
+  const handleClickThree = () => {
+    setNameThree("Purchased");
   };
   return (
     <div className="column">
@@ -23,8 +28,13 @@ const Product = () => {
       </div>
       <div className="productTwo">
         <img src={Applience} />
-        <p>{name}</p>
-        <button onClick={handleClickTwo}>Sell</button>
+        <p>{nameTwo}</p>
+        <button onClick={handleClickTwo}>Buy</button>
+      </div>
+      <div className="productThree">
+        <img src={Applience} />
+        <p>{nameThree}</p>
+        <button onClick={handleClickThree}>Buy</button>
       </div>
     </div>
   );

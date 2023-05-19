@@ -22,8 +22,8 @@
     margin-right: 10%;
 }
 .home img {
-    height: 110px;
-    width: 130px;
+    height: 20%;
+    width: 20%;
   }
   @media screen and (max-width: 525px){.home img {
     width: 0px;

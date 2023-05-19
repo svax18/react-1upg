@@ -1,30 +1,39 @@
-.product{
+.column{
     background-color: rgb(177, 252, 252);
     background-image: linear-gradient(rgb(72, 255, 255), rgb(255, 255, 255));
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-right: 150px;
+    padding-right: 10%;
     padding-left: 60px;
     padding-top: 100px;
     padding-bottom: 300px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
 
     
 }
 .column{
     display: flex;
     flex-direction: row;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
+    margin: 10px;
 }
 .Product h2{
     padding-bottom: 100px;
 }
 .productOne img{
-    width: 270px;
-    margin-right: 20px;
+    width: 90%;
+    margin-right: 10px;
     margin-top: 30px;
 }.productTwo img{
-    width: 270px;
-    margin-right: 20px;
+    width: 90%;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.productThree img{
+    width: 90%;
+    margin-right: 10px;
     margin-top: 30px;
 }
 .text{
