@@ -6,9 +6,9 @@ import Applience from "../images/Colorfull.png";
 import Chair from "../images/Chairs.jpeg";
 
 const Product = () => {
-  const [name, setName] = useState("Place item in shopping cart");
-  const [nameTwo, setNameTwo] = useState("Place item in shopping cart");
-  const [nameThree, setNameThree] = useState("Place item in shopping cart");
+  const [name, setName] = useState("Place item in cart");
+  const [nameTwo, setNameTwo] = useState("Place item in cart");
+  const [nameThree, setNameThree] = useState("Place item in cart");
 
   const handleClick = () => {
     setName("Purchased");
