@@ -1,8 +1,9 @@
 import React from "react";
 import "../Style/Product.css";
 import { useState } from "react";
-import Logo from "../images/nr1.jpg";
-import Applience from "../images/HouseApplience.jpg";
+import Logo from "../images/Table.jpeg";
+import Applience from "../images/Colorfull.png";
+import Chair from "../images/Chairs.jpeg";
 
 const Product = () => {
   const [name, setName] = useState("Place item in shopping cart");
@@ -27,12 +28,12 @@ const Product = () => {
         <button onClick={handleClick}>Buy</button>
       </div>
       <div className="productTwo">
-        <img src={Applience} />
+        <img src={Chair} />
         <p>{nameTwo}</p>
         <button onClick={handleClickTwo}>Buy</button>
       </div>
       <div className="productThree">
-        <img src={Applience} />
+        <img src={Chair} />
         <p>{nameThree}</p>
         <button onClick={handleClickThree}>Buy</button>
       </div>

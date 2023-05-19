@@ -1,9 +1,9 @@
 import React from "react";
 import backgroundImg from "../images/Colorfull.png";
 import "../Style/Home.css";
-import Logo from "../images/nr1.jpg";
-import Color from "../images/var.jpg";
-import Applience from "../images/HouseApplience.jpg";
+import Chair from "../images/Chairs.jpeg";
+import Table from "../images/Table.jpeg";
+import Applience from "../images/Colorfull.png";
 
 function Home() {
   return (
@@ -20,9 +20,9 @@ function Home() {
           Need help renovating? Don't worry our fake services will help you!
         </h4>
         <div className="examplePhotos">
-          <img src={Logo} />
+          <img src={Table} />
           <img src={Applience} />
-          <img src={Color} />
+          <img src={Chair} />
         </div>
       </div>
     </div>
