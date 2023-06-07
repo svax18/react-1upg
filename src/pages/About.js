@@ -6,8 +6,11 @@ import { useState } from "react";
 function About() {
   const [name, setName] = useState("");
 
-  const handleSubmit = () => {
-    setName(`You submited: ${name}`);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(
+      `You submited an text that was called "${name}" and contained ${name.length} charcters`
+    );
   };
 
   return (
@@ -49,9 +52,11 @@ function About() {
           <input type="submit" />
         </form>
       </div>
-      <p>{name}</p>
 
-      <p>Sign up with us by entering your name here.</p>
+      <p>
+        Write a text in the box above for an alert with some information about
+        your input.
+      </p>
     </div>
   );
 }

@@ -9,10 +9,18 @@ function Footer() {
   return (
     <div className="footer">
       <div className="socials">
-        <InstagramIcon />
-        <TwitterIcon />
-        <FacebookIcon />
-        <LinkedInIcon />
+        <a href="https://www.instagram.com/">
+          <InstagramIcon />
+        </a>
+        <a href="https://twitter.com/?lang=sv">
+          <TwitterIcon />
+        </a>
+        <a href="https://sv-se.facebook.com/">
+          <FacebookIcon />
+        </a>
+        <a href="https://se.linkedin.com/">
+          <LinkedInIcon />
+        </a>
       </div>
       <p> &copy; 2023 svenswebbshop</p>
     </div>
