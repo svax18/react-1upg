@@ -1,7 +1,16 @@
 import React from "react";
 import "../Style/About.css";
+import ReactDOM from "react-dom/client";
+import { useState } from "react";
 
 function About() {
+  const [name, setName] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`You submited: ${name}`);
+  };
+
   return (
     <div className="about">
       <h1>Our story</h1>
@@ -26,12 +35,29 @@ function About() {
         mollit anim id est laborum.{" "}
       </div>
       <h2>The company was founded on a dream of improving the world.</h2>
-      <p>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum.1997-2023
-      </p>
+      <h3>{setName}</h3>
+
+      <div className="WelcomeMessage">
+        <p>hi</p>
+
+        <form onSubmit={handleSubmit}>
+          <label>
+            Please enter a text to my form:
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          <input type="submit" />
+        </form>
+      </div>
+
+      <p>Sign up with us by entering your name here.</p>
     </div>
   );
 }
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<About />);
 
 export default About;
