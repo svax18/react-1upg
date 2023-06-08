@@ -8,9 +8,13 @@ function About() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(
-      `You submited an text that was called "${name}" and contained ${name.length} charcters`
-    );
+    if (name.length >= 8) {
+      alert(
+        `You submited an text that was called "${name}" and contained ${name.length} charcters`
+      );
+    } else {
+      alert(`Your text should be at least 8 charracters long`);
+    }
   };
 
   return (
@@ -42,7 +46,7 @@ function About() {
       <div className="WelcomeMessage">
         <form onSubmit={handleSubmit}>
           <label>
-            Please enter a text to my form:
+            Please enter a text to my form minimum 8 characters long:
             <input
               type="text"
               value={name}
